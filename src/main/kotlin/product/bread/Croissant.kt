@@ -2,11 +2,11 @@ package product.bread
 
 import menu.Bread
 
-class Focaccia : Bread(Focaccia.name, Focaccia.description, Focaccia.price) {
+class Croissant : Bread(Croissant.name, Croissant.description, Croissant.price) {
     companion object {
-        const val name = "포카차"
-        const val description = "올리브와 허브를 곁들여 향긋해요"
-        const val price = 2.5
+        const val name = "크루아상"
+        const val description = "버터의 풍미가 가득해요"
+        const val price = 3.000
     }
 
     override val name: String

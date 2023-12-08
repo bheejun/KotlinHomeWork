@@ -1,2 +1,3 @@
-interface Product {
+interface Product : Menu {
+    val price : Double
 }

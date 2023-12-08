@@ -1,4 +1,7 @@
-package Menu
+package menu
 
-class Bread {
-}
+import Product
+open class Bread(
+    override val name: String,
+    override val description: String,
+    override val price: Double) : Product
