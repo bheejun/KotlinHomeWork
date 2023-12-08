@@ -66,8 +66,8 @@ fun displayCoffeeMenu(cart: Cart) {
         when (readln()) {
             "1" -> {
                 val americano = Americano()
-
-                println("샷추가를 하시겠어요? 가격은 500원입니다. (yes/no)")
+                println("1. ${Americano.name} | W ${Americano.price} | ${Americano.description}")
+                println("위 메뉴에 샷추가를 하시겠어요? 가격은 500원입니다. (yes/no)")
                 val doubleShotInput = readln()
                 if (doubleShotInput.equals("yes", ignoreCase = true)) {
                     val americanoDoubleShot = Americano(doubleShot = true)
@@ -87,8 +87,8 @@ fun displayCoffeeMenu(cart: Cart) {
 
             "3" -> {
                 val espresso = Espresso()
-
-                println("샷추가를 하시겠어요? 가격은 500원입니다. (yes/no)")
+                println("3. ${Espresso.name} | W ${Espresso.price} | ${Espresso.description}")
+                println("위 메뉴에 샷추가를 하시겠어요? 가격은 500원입니다. (yes/no)")
                 val doubleShotInput = readln()
                 if (doubleShotInput.equals("yes", ignoreCase = true)) {
                     val espressoDoubleShot = Espresso(doubleShot = true)
@@ -102,8 +102,8 @@ fun displayCoffeeMenu(cart: Cart) {
 
             "4" -> {
                 val icedAmericano = IcedAmericano()
-
-                println("샷추가를 하시겠어요? 가격은 500원입니다. (yes/no)")
+                println("4. ${IcedAmericano.name} | W ${IcedAmericano.price} | ${IcedAmericano.description}")
+                println("위 메뉴에 샷추가를 하시겠어요? 가격은 500원입니다. (yes/no)")
                 val doubleShotInput = readln()
                 if (doubleShotInput.equals("yes", ignoreCase = true)) {
                     val icedAmericanoDoubleShot = IcedAmericano(doubleShot = true)
