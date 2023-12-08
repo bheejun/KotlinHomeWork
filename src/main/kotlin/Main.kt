@@ -109,9 +109,12 @@ fun displayCoffeeMenu(cart: Cart) {
                     val icedAmericanoDoubleShot = IcedAmericano(doubleShot = true)
                     cart.addProduct(icedAmericanoDoubleShot)
                     println("${IcedAmericano.name} (샷추가) 가 장바구니에 추가되었습니다.")
-                }else{
+                }else if(doubleShotInput.equals("no", ignoreCase = true)){
                     cart.addProduct(icedAmericano)
                     println("${IcedAmericano.name}가 장바구니에 추가되었습니다.")
+                }else{
+                    println("올바르게 입력해 주세요.")
+                    continue
                 }
             }
 
