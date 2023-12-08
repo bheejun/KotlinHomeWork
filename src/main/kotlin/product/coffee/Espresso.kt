@@ -3,7 +3,7 @@ package product.coffee
 
 import menu.Coffee
 
-class Espresso : Coffee(Espresso.name, Espresso.description, Espresso.price) {
+class Espresso(doubleShot: Boolean = false) : Coffee(name, description, price) {
     companion object {
         const val name = "에스프레소"
         const val description = "진하고 향이 좋은 에스프레소"
@@ -15,5 +15,5 @@ class Espresso : Coffee(Espresso.name, Espresso.description, Espresso.price) {
     override val description: String
         get() = Companion.description
     override val price: Double
-        get() = Companion.price
+        get() = Americano.price + if (doubleShot) 0.5 else 0.0
 }

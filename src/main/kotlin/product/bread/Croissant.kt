@@ -2,7 +2,7 @@ package product.bread
 
 import menu.Bread
 
-class Croissant : Bread(Croissant.name, Croissant.description, Croissant.price) {
+class Croissant : Bread(name, description, price) {
     companion object {
         const val name = "크루아상"
         const val description = "버터의 풍미가 가득해요"

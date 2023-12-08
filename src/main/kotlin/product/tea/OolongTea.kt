@@ -2,7 +2,7 @@ package product.tea
 
 import menu.Tea
 
-class OolongTea : Tea(OolongTea.name, OolongTea.description, OolongTea.price) {
+class OolongTea : Tea(name, description, price) {
     companion object {
         const val name = "우롱차"
         const val description = "우롱차에요"

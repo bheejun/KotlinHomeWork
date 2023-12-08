@@ -4,7 +4,7 @@ import menu.Tea
 
 
 
-class BlackTea : Tea(BlackTea.name, BlackTea.description, BlackTea.price) {
+class BlackTea : Tea(name, description, price) {
     companion object {
         const val name = "홍차"
         const val description = "홍차에요"
